@@ -8,7 +8,12 @@
  * @property {string} name - 信息源名称
  * @property {string} url - RSS URL地址
  * @property {string} category - 分类名称
+ * @property {boolean} [isCustom] - 是否为自定义源
+ * @property {'rss' | 'weread'} [type] - 源类型
+ * @property {string} [wereadId] - 微信读书用户ID
  */
+
+export {}
 
 // 默认配置
 export const config = {
@@ -68,11 +73,6 @@ export const config = {
       url: "https://www.microsoft.com/en-us/research/feed/",
       category: "技术博客",
     },
-    // {
-    //   name: "Product Hunt 今日热门",
-    //   url: "https://rsshub.rssforever.com/producthunt/today",
-    //   category: "产品资讯",
-    // },
     {
       name: "LINUX DO 今日热门",
       url: "https://r4l.deno.dev/https://linux.do/top.rss?period=daily",
